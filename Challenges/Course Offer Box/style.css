@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(66, 49, 139);
+    height: 100vh;
+}
+
+.container {
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tilel {
+    margin-bottom: 40px;
+}
+
+.tilel h1 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.tilel span {
+    color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_1 {
+    background: white;
+    width: 350px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 0 5px black;
+    z-index: 999;
+}
+
+.container_2{
+    background: white;
+    width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: -30px;
+    box-shadow: 0 0 5px black;
+}
+
+ .top {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+
+.top .bx {
+    color: rgb(210, 178, 2);
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+ .top span {
+    text-transform: capitalize;
+    text-decoration: underline rgba(210, 179, 2, 0.447) 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ .middle{
+    margin-bottom: 20px;
+}
+
+ .middle .allText{
+    width: 100%;
+}
+
+ .middle .text{
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 0 20px 0;
+    border-bottom: solid 2px #dddcdc;
+}
+
+.middle .priceButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .middle .priceButton .price .bx{
+    font-size: 14px;
+    position: relative;
+    top: -15px;
+    right: -8px;
+}
+
+ .middle .priceButton .price .span_1{
+    font-size: 30px;
+}
+
+.middle .priceButton .price .span_2{
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    left: -3px;
+}
+
+ .middle .priceButton .button input{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: rgb(210, 178, 2);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: border 0.3s ease-in-out;
+}
+
+.middle .priceButton .button input:hover{
+    border: solid 3px black;
+}
+
+.container_1 .bottom a{
+     color: black;
+     text-decoration: none;
+     font-weight: 600;
+     margin: 0 5px;
+}
+
+.container_1 .bottom a:hover{
+    text-decoration: underline solid black 2px;
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+
+.member_1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.member_2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.member_3 {
+    grid-column: 4 /span 1;
+    grid-row: 1 / span 3;
+}
+
+.member_4 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.member_5 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.member_6 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.member_7 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.member_8 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.member_9 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.member_10 {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.container .members {
+    background: white;
+    padding: 15px;
+    border-bottom: solid 4px orange;
+    line-height: 20px;
+}
+
+.container .members .name_jop .name {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .members .name_jop .jop {
+    color: rgb(150, 150, 150);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container .members .name_description {
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.member_3 , .member_5 , .member_8{
+    color: white;
+    background-color: black !important;
+}

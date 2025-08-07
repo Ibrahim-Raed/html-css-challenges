@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color: rgba(31, 31, 31, 0.98);
+    --border-button-color: rgb(255, 255, 255);
+    --border-item-color: rgba(255, 255, 255, 0.2);
+    --premium-bg:rgb(28, 173, 245);
+}
+
+body {
+    background: #eee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic,
+.standard,
+.unlimited {
+    background: var(--bg-color);
+    width: 270px;
+    border: solid 1px var(--border-item-color);
+}
+
+.premium {
+    width: 250px;
+    height: 500px;
+    background: var(--premium-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_price {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_price .title {
+    color: white;
+    padding: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title_price .price {
+    color: white;
+}
+
+.title_price .price .span_1 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+    right: -5px;
+}
+
+.title_price .price .span_2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.basic .title_price .price .span_3 {
+    margin-left: -5px;
+}
+
+.items .item {
+    color: #919090;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-top: solid 1px var(--border-item-color);
+}
+
+.items :where(.item_2, .item_4) {
+    background: rgb(45, 42, 42);
+}
+
+.premium .items .item {
+    color: white;
+    background: var(--premium-bg);
+}
+
+.button {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.button input {
+    background: var(--bg-color);
+    color: white;
+    width: 130px;
+    height: 35px;
+    text-transform: capitalize;
+    font-weight: 600;
+    outline: none;
+    border: solid 1px var(--border-button-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.button input:hover{
+    background: rgba(59, 59, 59, 0.98);
+}
+
+.premium .button input {
+    background: var(--premium-bg);
+}
+
+.premium .button input:hover {
+    background: rgb(102, 202, 252);
+}
