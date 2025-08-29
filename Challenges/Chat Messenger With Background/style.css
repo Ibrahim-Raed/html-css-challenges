@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    box-shadow: 0 0 5px black;
+}
+
+.container .left {
+    width: 350px;
+}
+
+.container .left .item {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: solid 2px #e9e9e9;
+    cursor: pointer;
+}
+
+.container .left .search .search_input {
+    height: 100%;
+}
+
+.container .left .search .search_input input {
+    background: #eee;
+    width: 200px;
+    height: 100%;
+    padding-left: 10px;
+    margin: 0 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+}
+
+.container .left .search .search_icon {
+    background: #63d8f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.container .left .search .search_icon .bx {
+    color: white;
+    font-size: 25px;
+}
+
+.container .left .item .image {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.container .left .item .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container .left .item .text .text_2 {
+    color: #a0a0a0;
+    margin-top: 5px;
+}
+
+.container .left .item .time {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.container .left .chat_5{
+    background: #63d8f2;
+}
+
+.container .right {
+    width: 650px;
+    border-left: solid #c9c9c9 2px;
+}
+
+.container .right .top {
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.container .right .top p {
+    margin-left: 20px;
+}
+
+.container .right .top p span {
+    color: #c9c9c9;
+}
+
+.container .right .bottom {
+    height: calc(100% - 90px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container .right .bottom .date {
+    color: #bfbfbf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .right .bottom .date div {
+    background: #e9e9e9;
+    width: 200px;
+    height: 2px;
+}
+
+.container .right .bottom .chat .get_message {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.container .right .bottom .chat .get_message p {
+    background: #63d8f2;
+    width: fit-content;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+
+.container .right .bottom .chat .send_message {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    direction: rtl;
+    align-self: flex-end;
+}
+
+.container .right .bottom .chat .send_message p {
+    background: #e9e9e9;
+    width: fit-content;
+    height: 40px;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.container .right .bottom .send_input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.container .right .bottom .send_input input{
+    background: #e9e9e9;
+    width: 95%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 30px;
+}
+
+.container .right .bottom .send_input .bx{
+    color: #929292;
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .right .bottom .send_input .bx-paperclip{
+    left: 5px;
+}
+.container .right .bottom .send_input .bx-smile{
+    right: 40px;
+    cursor: pointer;
+}
+.container .right .bottom .send_input .bxs-send{
+    right: 10px;
+    cursor: pointer;
+}

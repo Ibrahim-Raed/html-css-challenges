@@ -1,0 +1,102 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FF82AC;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+}
+
+.container .info {
+    background-color: rgb(245, 245, 245);
+    width: 50%;
+    height: 100%;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    z-index: 999;
+}
+
+.container .info .title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.container .info .rate {
+    color: var(--main-color);
+    font-size: 20px;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+.container .info .text {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container .info button {
+    background-color: var(--main-color);
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .info button:hover {
+    scale: 0.95;
+}
+
+.container .slider {
+    background-image: url(iphone\ 12.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.container .slider ul {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    translate: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .slider:hover ul {
+    translate: 0;
+}
