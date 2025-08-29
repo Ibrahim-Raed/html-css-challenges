@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+#sideBar {
+    display: none;
+}
+
+.btn {
+    background: rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    z-index: 999;
+
+}
+
+
+.btn label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    rotate: 180deg;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn2 {
+    background: rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    z-index: 999;
+    display: none;
+}
+
+.btn2 label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#sideBar:checked~.btn2 {
+    display: inline-block;
+}
+
+.items {
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    position: absolute;
+    top: 41%;
+    right: 80%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.items a {
+    color: black;
+}
+
+#sideBar:checked~.dashboard {
+    right: 50%;
+    top: 3%;
+}
+
+#sideBar:checked~.question {
+    right: 17%;
+    top: 27%;
+    transform: translateY(-100%);
+}
+
+#sideBar:checked~.calendar {
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sideBar:checked~.contact {
+    right: 17%;
+    top: 70%;
+}
+
+#sideBar:checked~.message {
+    right: 50%;
+    top: 93%;
+    transform: translateY(-100%);
+}

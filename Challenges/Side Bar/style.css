@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: rgba(0, 0, 0, 0.817);
+}
+
+.SideBar{
+    width: 250px;
+    min-height: 97vh;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: -250px;
+    transition: left, 0.3s ease-in-out;
+}
+
+.SideBarLogo a{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 8px 0;
+    border-bottom: solid 2px white;
+    transition: all 0.3s ease-in-out;
+}
+
+.SideBarLogo a:hover {
+    color: rgb(248, 226, 197);
+    text-shadow: 0 0 5px rgb(248, 226, 197);
+}
+
+.SideBarItems{
+    display: flex;
+    flex-direction:column;
+}
+
+.SideBarItems a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.SideBarItems a:hover {
+    color: rgb(248, 226, 197);
+    text-shadow: 0 0 5px rgb(248, 226, 197);
+    border: solid rgb(248, 226, 197) 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Media{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+}
+
+.Media a i{
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Media .bxl-facebook:hover{
+    color: #1877F2;
+}
+
+.Media .bxl-instagram-alt:hover{
+    color: #C13584;
+}
+
+.Media .bxl-twitter:hover{
+    color: #1DA1F2;
+}
+
+.Media .bxl-youtube:hover{
+    color: #FF0000;
+}
+
+#checkbox{
+    display: none;
+}
+
+.button1 i{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.SideBar .button2 i{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    left: 215px;
+    top: 12px;
+}
+
+#checkbox:checked ~ .SideBar{
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#checkbox:checked ~ .button1{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
